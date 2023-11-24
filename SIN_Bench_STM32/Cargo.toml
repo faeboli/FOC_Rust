@@ -1,0 +1,19 @@
+[package]
+name = "SIN_Bench_STM32"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = "0.7.7"
+cortex-m-rt = "0.7.3"
+embedded-hal = "0.2.7"
+fixed = "1.24.0"
+libm = "0.2.8"
+nb = "1.1.0"
+panic-halt = "0.2.0"
+
+[dependencies.stm32f1xx-hal]
+version = "0.10.0"
+features = ["rt", "stm32f103", "medium"]
